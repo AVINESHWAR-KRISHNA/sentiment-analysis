@@ -9,7 +9,7 @@ def train_models(X_train, y_train, save_path):
     try:
         models = {
             'Naive Bayes': MultinomialNB(),
-            'SVM': SVC(probability=True),
+            'SVM': SVC(),
             'Decision Tree': DecisionTreeClassifier(),
             'Random Forest': RandomForestClassifier()
         }
