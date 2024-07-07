@@ -18,7 +18,7 @@ def preprocess_data(data):
         print("The 'text' column is missing in the DataFrame.")
         return None
 
-def split_data(data, test_size=0.8, random_state=42):
+def split_data(data, test_size=0.6, random_state=42):
     try:
         X_train, X_test, y_train, y_test = train_test_split(data['text'], data['label'], test_size=test_size, random_state=random_state)
         return X_train, X_test, y_train, y_test
